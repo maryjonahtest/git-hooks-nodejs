@@ -26,7 +26,6 @@
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "post-commit": "npm run success-message"
-
     }
   },
   "lint-staged": {
@@ -35,14 +34,18 @@
       "jest --findRelatedTests"
     ]
   },
-
   "commitlint": {
     "rules": {
-      "references-empty": [2, "never"]
+      "references-empty": [
+        2,
+        "never"
+      ]
     },
     "parserPreset": {
       "parserOpts": {
-        "issuePrefixes": ["ISSUE-"]
+        "issuePrefixes": [
+          "ISSUE-"
+        ]
       }
     }
   }
